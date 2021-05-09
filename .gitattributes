@@ -3,3 +3,7 @@
 $ git config --global filter.kicad_project.clean "sed -E 's/^update=.*$/update=Date/'"
 $ git config --global filter.kicad_project.smudge cat
 
+*.pro filter=kicad_project
+
+$ git config --global filter.kicad_project.clean "sed -E 's/^update=.*$/update=Date/'"
+$ git config --global filter.kicad_project.smudge cat
