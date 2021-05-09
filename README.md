@@ -1,2 +1,2 @@
 # egpad
-discipad with rotary encoders i guess
+walmart discipad with rotary encoders i guess
