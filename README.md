@@ -69,5 +69,5 @@ Finally, the finished product:
 https://user-images.githubusercontent.com/69698200/134389948-083b9ff9-627d-4abd-a4a4-c04e07a00819.mp4
 
 
-# afterword
+# afterword!
 This has been a very fun project from start to finish, I highly recommend anyone reading this to try creating your own board from scratch, theres a lot you can learn from this project alone. Overall I'd consider this a success, might need a longer cable though. Thanks tanman for helping me throughout the entire project <3.
