@@ -52,7 +52,7 @@ Parts came in around 2-4 weeks later:
 Since I had some prior experience soldering this wasn't too troublesome to complete. The hardest parts were probably the SMD capacitors since they were so small, and the Pro Micro pins since the pins didn't have much support to hold them, I had to get my friend to do most of them for me (thanks matthew):  
 <img src="./images/EGPadProgress.png" width="450"><br/>
 
-After a couple hours of soldering, here is the finished product:  
+After a couple hours of soldering, here is the finished build:  
 <img src="./images/EGPadSideView.png" width="450">
 <img src="./images/EGPadTopDown.png" width="450"><br/>
 
