@@ -53,8 +53,8 @@ Since I had some prior experience soldering this wasn't too troublesome to compl
 <img src="./images/EGPadProgress.png" width="450"><br/>
 
 After a couple hours of soldering, here is the finished build:  
-<img src="./images/EGPadSideView.png" width="450">
-<img src="./images/EGPadTopDown.png" width="450"><br/>
+<img src="./images/EGPadSideView.png" width="350">
+<img src="./images/EGPadTopDown.png" width="350"><br/>
 
 # part 5: programming
 Now that the physical board has been completed, I began working on writing the firmware for the board. Using the [QMK wiki](https://docs.qmk.fm/#/ "QMK Documentation"), I rewrote the files on an existing board so I wouldn't have to worry to much about formatting and all that:<br/>
