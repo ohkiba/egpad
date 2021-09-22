@@ -4,7 +4,7 @@ walmart discipad with rotary encoders i guess
 # build log!
 
 # part 1: prep
-Some prepwork for this project involved researching various PCB CAD software that I could use to design my PCB. Eventually, I decided on using KiCAD to design the pcb, thanks to [ai03's PCB Designer Guide](https://wiki.ai03.com/books/pcb-design "ai03's PCB Designer Guide") and [ruiqimao's Keyboard PCB Guide](https://github.com/ruiqimao/keyboard-pcb-guide "ruiqimao's keyboard pcb guide"). The footprint libraries used in this project also came from those guides.
+Some prepwork for this project involved researching various PCB CAD software that I could use to design my PCB. Eventually, I decided on using KiCAD to design the pcb, thanks to [ai03's PCB Designer Guide](https://wiki.ai03.com/books/pcb-design "ai03's PCB Designer Guide") and [ruiqimao's Keyboard PCB Guide](https://github.com/ruiqimao/keyboard-pcb-guide "ruiqimao's keyboard pcb guide"). The footprint libraries used in this project also came from those guides. I also opted to use the Arduino Pro Micro microcontroller to power the board as its quite popular for DIY boards and its QMK compatible.
 
 # part 2: schematic design
 Next, I had to learn how to use KiCAD, which mostly came from ai03's guide. First, I created the schematic which is the most important part of the design. Overall a pretty easy step, it was similar to the circuit design software Multisim so I had some knowledge going into this. 
@@ -31,18 +31,34 @@ My first attempt at routing the traces for the board was quite messy:
 I figured since I now knew how routing traces worked, I could use the Discipad routing to make mine look better:  
 <img src="./images/EGPadPCB.png" width="500">
 
+A side by side comparison:  
+<img src="./images/EGPadPCBTraces1.png" width="450">
+<img src="./images/EGPadPCB.png" width="450"><br/>
+
 Now that I've completed the PCB design, I created some renders to see how the board would look IRL:
 <img src="./images/EGPadPCBRenderF.png" width="450">
 <img src="./images/EGPadPCBRenderB.png" width="450"> <br/>
 
 # part 4: manufacturing
 Now that all aspects of the design have been completed, I started looking for vendors to print the PCB, as well as places to buy the components (caps, resistors, switches etc.). For the PCB, I decided to go with [JLCPCB](https://jlcpcb.com/) since I've heard good things about them (thanks matthew). All the other components I decided to buy from various aliexpress vendors since its cheap and I'm in no real rush to build this thing. I compiled all the costs into an excel sheet for a very primitive bill of materials (BoM) which is also included in this repo:
+<img src="./images/EGPadBoMCosts.png" width="450"><br/>
+I decided to skip the TS80 and just borrow my friend's setup (thanks matthew).  
 
-Parts came in around 2-4 weeks later:
+At the time, I completely forgot to purchase stabs so rip 2u keys.
 
+Parts came in around 2-4 weeks later:  
+<img src="./images/EGPadPCBParts1.png" width="450"><br/>
 
-![](./images/EGPadProgress.png)
-![](./images/EGPadSideView.png)
-![](./images/EGPadTopDown.png)
+# part 4.5: assembly
+Since I had some prior experience soldering this wasn't too troublesome to complete. The hardest parts were probably the SMD capacitors since they were so small, and the Pro Micro pins since the pins didn't have much support to hold them, I had to get my friend to do most of them for me (thanks matthew):  
+<img src="./images/EGPadProgress.png" width="450"><br/>
+
+After a couple hours of soldering, here is the finished product:  
+<img src="./images/EGPadSideView.png" width="450">
+<img src="./images/EGPadTopDown.png" width="450"><br/>
+
+# part 5: programming
+Now that the physical board has been completed, I began working on writing the firmware for the board. Using the [QMK wiki](https://docs.qmk.fm/#/ "QMK Documentation"), I rewrote the files on an existing board so I wouldn't have to worry to much about formatting and all that:
+
 
 Overall I'd consider this a success, might need a longer cable though.
