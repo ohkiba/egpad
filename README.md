@@ -24,8 +24,7 @@ Now its time to route the traces or essentially wire the components of the PCB t
 involves a lot of planning as well as trial and error. The top of the board was especially difficult due to the density of the components and lack of space for the traces:  
 <img src="./images/EGPadPCBTraces1Top.png" width="500"><br/>
 
-
-My first attempt at routing the traces for the board was quite messy:
+My first attempt at routing the traces for the board was quite messy:  
 <img src="./images/EGPadPCBTraces1.png" width="500"><br/>
 
 I figured since I now knew how routing traces worked, I could use the Discipad routing to make mine look better:  
@@ -40,7 +39,7 @@ Now that I've completed the PCB design, I created some renders to see how the bo
 <img src="./images/EGPadPCBRenderB.png" width="450"> <br/>
 
 # part 4: manufacturing
-Now that all aspects of the design have been completed, I started looking for vendors to print the PCB, as well as places to buy the components (caps, resistors, switches etc.). For the PCB, I decided to go with [JLCPCB](https://jlcpcb.com/) since I've heard good things about them (thanks matthew). All the other components I decided to buy from various aliexpress vendors since its cheap and I'm in no real rush to build this thing. I compiled all the costs into an excel sheet for a very primitive bill of materials (BoM) which is also included in this repo:
+Now that all aspects of the design have been completed, I started looking for vendors to print the PCB, as well as places to buy the components (caps, resistors, switches etc.). For the PCB, I decided to go with [JLCPCB](https://jlcpcb.com/) since I've heard good things about them and you can print various coloured PCBs (thanks matthew). All the other components I decided to buy from various aliexpress vendors since its cheap and I'm in no real rush to build this thing. I compiled all the costs into an excel sheet for a very primitive bill of materials (BoM) which is also included in this repo:
 <img src="./images/EGPadBoMCosts.png" width="450"><br/>
 I decided to skip the TS80 and just borrow my friend's setup (thanks matthew).  
 
@@ -59,6 +58,13 @@ After a couple hours of soldering, here is the finished product:
 
 # part 5: programming
 Now that the physical board has been completed, I began working on writing the firmware for the board. Using the [QMK wiki](https://docs.qmk.fm/#/ "QMK Documentation"), I rewrote the files on an existing board so I wouldn't have to worry to much about formatting and all that:
+<img src="./images/EGPadQMK1.png" width="450"><br/>
+
+The firmware is included in this repo if you want to explore it in detail. All files were edited on Sublime Text Editor.  
+
+Throughout the process, I had to flash the firmware to make sure it worked as I added more functions. This was done through QMK MSYS and QMK Toolbox.
+
+Finally, the finished product:
 
 
 Overall I'd consider this a success, might need a longer cable though.
