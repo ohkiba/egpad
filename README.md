@@ -35,8 +35,8 @@ A side by side comparison:
 <img src="./images/EGPadPCB.png" width="450"><br/>
 
 Now that I've completed the PCB design, I created some renders to see how the board would look IRL:<br/>
-<img src="./images/EGPadPCBRenderF.png" width="350">
-<img src="./images/EGPadPCBRenderB.png" width="350"> <br/>
+<img src="./images/EGPadPCBRenderF.png" width="300">
+<img src="./images/EGPadPCBRenderB.png" width="300"> <br/>
 
 # part 4: manufacturing
 Now that all aspects of the design have been completed, I started looking for vendors to print the PCB, as well as places to buy the components (caps, resistors, switches etc.). For the PCB, I decided to go with [JLCPCB](https://jlcpcb.com/) since I've heard good things about them and you can print various coloured PCBs (thanks matthew). All the other components I decided to buy from various aliexpress vendors since its cheap and I'm in no real rush to build this thing. I compiled all the costs into an excel sheet for a very primitive bill of materials (BoM) which is also included in this repo:<br/>
