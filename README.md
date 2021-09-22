@@ -31,12 +31,12 @@ I figured since I now knew how routing traces worked, I could use the Discipad r
 <img src="./images/EGPadPCB.png" width="500">
 
 A side by side comparison:  
-<img src="./images/EGPadPCBTraces1.png" width="450">
-<img src="./images/EGPadPCB.png" width="450"><br/>
+<img src="./images/EGPadPCBTraces1.png" width="350">
+<img src="./images/EGPadPCB.png" width="350"><br/>
 
 Now that I've completed the PCB design, I created some renders to see how the board would look IRL:<br/>
-<img src="./images/EGPadPCBRenderF.png" width="300">
-<img src="./images/EGPadPCBRenderB.png" width="300"> <br/>
+<img src="./images/EGPadPCBRenderF.png" width="350">
+<img src="./images/EGPadPCBRenderB.png" width="350"> <br/>
 
 # part 4: manufacturing
 Now that all aspects of the design have been completed, I started looking for vendors to print the PCB, as well as places to buy the components (caps, resistors, switches etc.). For the PCB, I decided to go with [JLCPCB](https://jlcpcb.com/) since I've heard good things about them and you can print various coloured PCBs (thanks matthew). All the other components I decided to buy from various aliexpress vendors since its cheap and I'm in no real rush to build this thing. I compiled all the costs into an excel sheet for a very primitive bill of materials (BoM) which is also included in this repo:<br/>
@@ -53,8 +53,8 @@ Since I had some prior experience soldering this wasn't too troublesome to compl
 <img src="./images/EGPadProgress.png" width="450"><br/>
 
 After a couple hours of soldering, here is the finished build:  
-<img src="./images/EGPadSideView.png" width="350">
-<img src="./images/EGPadTopDown.png" width="350"><br/>
+<img src="./images/EGPadSideView.png" width="450">
+<img src="./images/EGPadTopDown.png" width="450"><br/>
 
 # part 5: programming
 Now that the physical board has been completed, I began working on writing the firmware for the board. Using the [QMK wiki](https://docs.qmk.fm/#/ "QMK Documentation"), I rewrote the files on an existing board so I wouldn't have to worry to much about formatting and all that:<br/>
